@@ -1,5 +1,8 @@
 ---
-
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Banner from '../components/banner.astro';
+import Nav from '../components/nav.astro';
 
 let baseURL = "";
 const isProd = import.meta.env.PROD; 
@@ -9,7 +12,6 @@ if (isProd) {
 	baseURL = import.meta.env.BASE_URL;
 }
 ---
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +23,12 @@ if (isProd) {
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-  <slot />
+  <Header />
+  <Nav />
+  <Banner />
+  <main>
+    <slot />
+  </main>
+  <Footer />
 </body>
 </html>
-
