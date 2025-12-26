@@ -6,4 +6,21 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
     <h1>Gallery</h1>
+
+    <br>
+    <picture class="gallery-images">
+        <source srcset="images/img1.png" media="(max-width: 400px)" />
+        <img src="images/img1.png" alt="Image 1" style="width: 50%; height: auto;" />
+
+        <source srcset="images/escrima.jpg" media="(max-width: 400px)" />
+        <img src="images/escrima.jpg" alt="Image 2" style="width: 50%; height: auto;" />
+
+        <source srcset="images/img2.jpg" media="(max-width: 400px)" />
+        <img src="images/img2.jpg" alt="Image 3" style="width: 50%; height: auto;" />
+
+        <source srcset="images/img3.jpg" media="(max-width: 400px)" />
+        <img src="images/img3.jpg" alt="Image 4" style="width: 50%; height: auto;" />
+
+    </picture>
+
 </Layout>
