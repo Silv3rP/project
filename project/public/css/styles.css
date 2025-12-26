@@ -1,6 +1,13 @@
+
+/* Code I did not know about was found on W3Schools and other tutorial sites */
+
+
+/* reset box sizing */
 *{
     box-sizing: border-box;
 }
+
+/* main layout - black background with flexbox */
 body, html{
     background-color: black;
     min-height: 100vh;
@@ -11,9 +18,10 @@ body, html{
     color: white;
 }
 
+/* header with yellow background */
 header {
     background-color: yellow;
-    padding: 20px;
+    padding: 10px;
     color: black;
     text-align: center;
     width: 100%;
@@ -24,6 +32,7 @@ header {
     
 }
 
+/* logo positioned on the left */
 .logo{
     height: 50px;
     margin-right: 15px;
@@ -31,6 +40,7 @@ header {
     left: 10px;
 }
 
+/* sticky nav bar */
 nav{
     margin-top: 20px;
     text-align: center;
@@ -42,6 +52,7 @@ nav{
     border: solid black 2px;
 }
 
+/* nav links styling */
 nav a{ 
     display: inline-block;
     text-decoration: none;
@@ -56,18 +67,20 @@ nav a{
     
 }
 
-a:hover{
+/* hover effect for nav links */
+nav a:hover{
     background-color: black;
     color: yellow;
     text-decoration: underline;
 }
 
-
+/* main content area */
 main{
     flex: 1;
     padding: 2rem;
 }
 
+/* images centered and responsive */
 .img{
     width: 50%;
     height: auto;
@@ -76,16 +89,18 @@ main{
     margin-right: auto;
 }
 
+/* main heading */
 h1 {
     font-size: 3em;
     margin: 0;
-    padding: 0;
-    background-color: yellow;
+    padding: 20px;
     color: black;
+    background-color: yellow;
     font-style: italic;
     text-align: center;
 }
 
+/* paragraph text */
 p{
     font-size: 1.2em;
     line-height: 1.6;
@@ -93,15 +108,131 @@ p{
     text-align: center;
 }
 
+/* h2 subheading */
+h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
+/* ordered list styling */
+.ol {
+    background-color: yellow;
+    color: black;
+    padding: 20px 40px;
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
 
+/*form submission css*/
+form {
+    background-color: yellow;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* footer at bottom */
 footer{
     bottom: 0;
     width: 100%;
     padding: 10px;
     background-color: yellow;
     font-style: italic;
+    font-size: 1.5em;
     text-align: center;
     color: black;
+    display: block;
     
+}
+
+/* hover effect for footer links */
+footer a:hover {
+    background-color: black;
+    color: yellow;
+    text-decoration: underline;
+    transition: background-color 0.5s, color 0.5s;
+    border-radius: 5px;
+}
+
+/* laptop and smaller screens */
+@media (max-width: 1024px) {
+    .logo {
+        height: 45px;
+    }
+    
+    nav a {
+        font-size: 1.3em;
+        padding: 12px;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    .img {
+        width: 70%;
+    }
+}
+
+/* tablets */
+@media (max-width: 768px) {
+    .logo {
+        height: 35px;
+        position: static;
+        margin: 0 auto 10px;
+        display: block;
+    }
+    
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    nav a {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+        padding: 15px;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    .img {
+        width: 90%;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+}
+
+/* mobile phones */
+@media (max-width: 480px) {
+    nav a {
+        font-size: 1em;
+        padding: 8px;
+        display: block;
+        margin: 5px 0;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .img {
+        width: 100%;
+    }
 }
