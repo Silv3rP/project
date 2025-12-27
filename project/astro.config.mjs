@@ -5,5 +5,5 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 
     site: 'https://Silv3rP.github.io',
-    base: '/project',
+    base: '/project/',
 });
