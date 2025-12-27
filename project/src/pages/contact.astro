@@ -11,6 +11,8 @@ import Layout from '../layouts/Layout.astro';
 
     <form class="form" action="https://formspree.io/f/{2901755203076226289}" method="POST">
 
+    <input type="hidden" name="_next" value={`${import.meta.env.BASE_URL}contact2`} />
+
     <label for="name">Name:</label><br>
 
     <input type="text" id="name" name="name" required><br><br>
@@ -31,7 +33,7 @@ import Layout from '../layouts/Layout.astro';
 
     <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-    <strong><a href={`${import.meta.env.BASE_URL}contact2`}><button type="button" class="submit-button">Submit</button></a></strong>
+    <strong><button type="submit" class="submit-button">Submit</button></strong>
 
     </form>
 
