@@ -1,9 +1,11 @@
+/* Global Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body and HTML Layout */
 body, html{
     background-color: black;
     min-height: 100vh;
@@ -12,8 +14,9 @@ body, html{
     color: white;
 }
 
+/* Header and Logo */
 header {
-    background-color: yellow;
+    background-color: gold;
     padding: 10px;
     color: black;
     text-align: center;
@@ -31,10 +34,11 @@ header {
     left: 10px;
 }
 
+/* Navigation Bar */
 nav{
     margin-top: 20px;
     text-align: center;
-    background-color: yellow;
+    background-color: gold;
     margin-bottom: 20px;
     width: 100%;
     position: sticky;
@@ -42,12 +46,13 @@ nav{
     border: solid black 2px;
 }
 
+/* Navigation Links */
 nav a{ 
     display: inline-block;
     text-decoration: none;
     font-style: italic;
     color: black;
-    background-color: yellow;
+    background-color: gold;
     font-weight: bold;
     font-size: 1.5em;
     padding: 15px;
@@ -57,15 +62,24 @@ nav a{
 
 nav a:hover{
     background-color: black;
-    color: yellow;
+    color: gold;
     text-decoration: underline;
 }
 
+/* Main Content Area */
 main{
     flex: 1;
     padding: 2rem;
 }
 
+.link a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.7s;
+
+}
+
+/* Images */
 img{
     width: 50%;
     height: auto;
@@ -74,6 +88,7 @@ img{
     margin-right: auto;
 }
 
+/* Gallery Section */
 .gallery-images{
     display: flex;
     flex-wrap: wrap;
@@ -83,10 +98,11 @@ img{
 }
 
 .gallery-images img {
-    max-width: 100%;
+    width: 200px;
     height: auto;
 }
 
+/* Video Embeds */
 iframe{
     display: block;
     margin: 20px auto;
@@ -95,11 +111,12 @@ iframe{
     height: 315px;
 }
 
+/* Headings */
 h1 {
     font-size: 3em;
     padding: 20px;
     color: black;
-    background-color: yellow;
+    background-color: gold;
     font-style: italic;
     text-align: center;
 }
@@ -119,8 +136,9 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Lists and Tables */
 ol {
-    background-color: yellow;
+    background-color: gold;
     color: black;
     padding: 20px 40px;
     margin: 20px auto;
@@ -133,7 +151,7 @@ table {
     width: 50%;
     border-collapse: separate;
     border-spacing: 10px;
-    background-color: yellow;
+    background-color: gold;
     color: black;
     margin: auto;
 }
@@ -143,35 +161,11 @@ table td {
     text-align: left;
 }
 
-form {
-    background-color: yellow;
-    color: black;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: center;
-}
-
-.submit-button {
-    background-color: black;
-    color: yellow;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.submit-button:hover {
-    background-color: red;
-    color: black;
-}
-
+/* Footer */
 footer{
     width: 100%;
     padding: 10px;
-    background-color: yellow;
+    background-color: gold;
     font-style: italic;
     font-size: 1.5em;
     text-align: center;
@@ -181,16 +175,19 @@ footer{
 footer a{
     color: black;
     text-decoration: none;
+    justify-content: center;
+    display: flex;
 }
 
 footer a:hover {
     background-color: black;
-    color: yellow;
+    color: gold;
     text-decoration: underline;
     transition: background-color 0.5s, color 0.5s;
     border-radius: 5px;
 }
 
+/* Responsive Design - Tablet (1024px and below) */
 @media (max-width: 1024px) {
     .logo {
         height: 45px;
